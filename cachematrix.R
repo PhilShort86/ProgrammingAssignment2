@@ -1,6 +1,6 @@
 ## R Programming Assignment 2: Lexical Scoping
-## THe following two functions, makeCacheMatrix and cacheSolve, creates a spercial matrix and and solves for the inverse 
-## of a matrix if there is no persivous solution that has been cached.
+## The following two functions, makeCacheMatrix and cacheSolve, creates a spercial matrix and solves for the inverse 
+## of a matrix if there is no previous solution that has been cached.
 ## Example output: 
 ##>Test_Matrix <-makeCacheMatrix(matrix(c(2,0,0,1), c(2,2)))
 ##> cacheSolve(Test_Matrix)
@@ -37,7 +37,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 ## cacheSolve solves for the inverse of the matrix created in makeCacheMatrix after to checks to see if the inverse of the matrix 
-## has already been determined.  If the matrix has already been determiend, it returns the cahced data for the matrix and skips
+## has already been determined.  If the matrix has already been determiend, it returns the cached data for the matrix and skips
 ## reperforming the inverse on the matrix again.
 
 cacheSolve <- function(x, ...) {
